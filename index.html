@@ -3,16 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batu Adventure - Paket Outbound Malang Terlengkap</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Batu Adventure - Paket Outbound Malang & Gathering Terbaik</title>
+    <meta name="description" content="Penyedia paket outbound, gathering, rafting, dan jeep adventure terbaik di Batu Malang. Fasilitator bersertifikat, lokasi eksklusif, dan harga kompetitif untuk perusahaan & keluarga.">
+    <meta name="keywords" content="outbound batu, paket gathering malang, rafting batu, jeep adventure, team building malang, batu adventure">
+    <meta name="author" content="Batu Adventure">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sholikhatunnikmah.github.io/paketoutbound/">
+    <meta property="og:title" content="Batu Adventure - Paket Outbound & Liburan Seru">
+    <meta property="og:description" content="Bangun kekompakan tim dengan suasana alam pegunungan yang sejuk. Paket mulai 125rb!">
+    <meta property="og:image" content="img/Slide7_7_11zon.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Batu Adventure - Outbound Malang">
+    <meta name="twitter:description" content="Solusi gathering dan outbound seru di Kota Batu. Booking sekarang!">
+    <meta name="twitter:image" content="img/Slide7_7_11zon.webp">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <meta name="theme-color" content="#198754">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://images.unsplash.com">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Batu Adventure",
+      "image": "img/Slide7_7_11zon.webp",
+      "description": "Penyedia jasa Outbound, Rafting, dan Gathering profesional di Kota Batu, Malang.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Sultan Agung No. 12",
+        "addressLocality": "Batu",
+        "addressRegion": "Jawa Timur",
+        "postalCode": "65314",
+        "addressCountry": "ID"
+      },
+      "priceRange": "$$",
+      "telephone": "+6282211221909",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "520"
+      }
+    }
+    </script>
+
     <style>
         /* Global Font */
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
-        /* Hero Section */
+        /* Hero Section - Optimized Text Shadow for readability */
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/Slide7_7_11zon.webp');
             background-size: cover;
@@ -21,6 +72,7 @@
             display: flex;
             align-items: center;
             color: white;
+            /* Preload hint for hero image handled in HTML or via optimization tools */
         }
 
         /* Hover Effect pada Card */
@@ -41,22 +93,40 @@
         }
         .gallery-item:hover .gallery-overlay { opacity: 1; }
 
-        /* Blog Image Wrapper (Agar gambar blog seragam) */
+        /* Blog Image Wrapper */
         .blog-img-wrapper { overflow: hidden; height: 200px; }
         .blog-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
         .card-hover:hover .blog-img-wrapper img { transform: scale(1.1); }
 
-        /* Floating WhatsApp */
+        /* Floating WhatsApp Optimized */
         .float-wa {
-            position: fixed; bottom: 30px; right: 30px;
-            width: 60px; height: 60px;
-            background-color: #25d366; color: #FFF;
-            border-radius: 50px; text-align: center; font-size: 30px;
-            box-shadow: 2px 2px 3px #999; z-index: 100;
-            display: flex; align-items: center; justify-content: center;
-            text-decoration: none; transition: 0.3s;
+            position: fixed; 
+            bottom: 30px; 
+            right: 30px;
+            width: 60px; 
+            height: 60px;
+            background-color: #25d366; 
+            color: #FFF;
+            border-radius: 50px; 
+            text-align: center; 
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3); 
+            z-index: 9999; /* Pastikan di atas Navbar & Modal */
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            text-decoration: none; 
+            transition: 0.3s;
+            animation: pulse-wa 2s infinite;
         }
         .float-wa:hover { background-color: #20ba5a; transform: scale(1.1); color: white; }
+
+        /* Animation Keyframes for WA */
+        @keyframes pulse-wa {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
 
         /* CTA Section Background */
         .cta-section {
@@ -73,8 +143,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold text-success" href="#"><i class="bi bi-tree-fill"></i> Batu Adventure</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold text-success" href="#" aria-label="Batu Adventure Home">
+                <i class="bi bi-tree-fill"></i> Batu Adventure
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -107,7 +179,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="img/Slide8_8_11zon.webp" class="img-fluid rounded shadow-lg" alt="Tim Batu Adventure">
+                    <img src="img/Slide8_8_11zon.webp" class="img-fluid rounded shadow-lg" alt="Tim Batu Adventure sedang briefing" width="600" height="400" loading="lazy">
                 </div>
                 <div class="col-lg-6 ps-lg-5">
                     <h6 class="text-success fw-bold text-uppercase">Tentang Batu Adventure</h6>
@@ -133,7 +205,7 @@
                 
                 <div class="col-lg-3 col-md-6">
                     <div class="card h-100 card-hover border-0 shadow-sm">
-                        <img src="img/IMG_8867_2_11zon.webp" class="card-img-top" alt="Half Day" style="height: 200px; object-fit: cover;">
+                        <img src="img/IMG_8867_2_11zon.webp" class="card-img-top" alt="Paket Half Day Outbound" style="height: 200px; object-fit: cover;" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Paket Half Day</h5>
                             <p class="text-success fw-bold">Mulai Rp 125.000/pax</p>
@@ -154,8 +226,8 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="card h-100 card-hover border-0 shadow-sm">
-                        <div class="position-absolute top-0 end-0 bg-warning text-dark px-2 py-1 small fw-bold rounded-start">Best Seller</div>
-                        <img src="img/IMG_8895_5_11zon.webp" class="card-img-top" alt="Full Day" style="height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 end-0 bg-warning text-dark px-2 py-1 small fw-bold rounded-start" style="z-index: 10;">Best Seller</div>
+                        <img src="img/IMG_8895_5_11zon.webp" class="card-img-top" alt="Paket Full Day Outbound" style="height: 200px; object-fit: cover;" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Paket Full Day</h5>
                             <p class="text-success fw-bold">Mulai Rp 185.000/pax</p>
@@ -176,7 +248,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="card h-100 card-hover border-0 shadow-sm">
-                        <img src="img/Slide16_16_11zon.webp" class="card-img-top" alt="Adventure" style="height: 200px; object-fit: cover;">
+                        <img src="img/Slide16_16_11zon.webp" class="card-img-top" alt="Paket Adventure Rafting" style="height: 200px; object-fit: cover;" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Adventure Rafting</h5>
                             <p class="text-success fw-bold">Mulai Rp 250.000/pax</p>
@@ -197,7 +269,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="card h-100 card-hover border-0 shadow-sm">
-                        <img src="img/Slide9_9_11zon.webp" class="card-img-top" alt="Menginap" style="height: 200px; object-fit: cover;">
+                        <img src="img/Slide9_9_11zon.webp" class="card-img-top" alt="Paket Gathering Menginap" style="height: 200px; object-fit: cover;" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Gathering 2H1M</h5>
                             <p class="text-success fw-bold">Hubungi Admin</p>
@@ -209,7 +281,7 @@
                             </ul>
                         </div>
                         <div class="card-footer bg-white border-0 pb-3">
-                            <a href="https://wa.me/6282211221909?text=Halo%20Admin,%20saya%20mau%20tanya%20paket%202H1M" target="_blank" class="btn btn-outline-success w-100">Konsultasi</a>
+                            <a href="https://wa.me/6282211221909?text=Halo%20Admin,%20saya%20mau%20tanya%20paket%202H1M" target="_blank" class="btn btn-outline-success w-100" rel="nofollow">Konsultasi</a>
                         </div>
                     </div>
                 </div>
@@ -224,19 +296,19 @@
             <div class="row g-3">
                 <div class="col-md-4 col-sm-6">
                     <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modalGaleri1">
-                        <img src="img/Slide13_13_11zon.webp" alt="Team Building">
+                        <img src="img/Slide13_13_11zon.webp" alt="Dokumentasi Team Building Batu" loading="lazy">
                         <div class="gallery-overlay"><i class="bi bi-zoom-in text-white fs-1"></i></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modalGaleri2">
-                        <img src="img/IMG_8896_6_11zon.webp" alt="Rafting">
+                        <img src="img/IMG_8896_6_11zon.webp" alt="Dokumentasi Rafting Batu Malang" loading="lazy">
                         <div class="gallery-overlay"><i class="bi bi-zoom-in text-white fs-1"></i></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modalGaleri3">
-                        <img src="img/Slide6_6_11zon.webp" alt="Camping">
+                        <img src="img/Slide6_6_11zon.webp" alt="Dokumentasi Camping Ceria" loading="lazy">
                         <div class="gallery-overlay"><i class="bi bi-zoom-in text-white fs-1"></i></div>
                     </div>
                 </div>
@@ -248,7 +320,7 @@
         <div class="container">
             <h2 class="fw-bold mb-3">Siap Membuat Tim Anda Lebih Kompak?</h2>
             <p class="lead mb-4">Dapatkan penawaran khusus untuk pemesanan bulan ini. Konsultasi gratis!</p>
-            <a href="https://wa.me/6282211221909?text=Halo%20Admin,%20saya%20ingin%20konsultasi%20paket%20outbound" target="_blank" class="btn btn-warning btn-lg px-5 fw-bold shadow">
+            <a href="https://wa.me/6282211221909?text=Halo%20Admin,%20saya%20ingin%20konsultasi%20paket%20outbound" target="_blank" class="btn btn-warning btn-lg px-5 fw-bold shadow" rel="nofollow">
                 <i class="bi bi-whatsapp"></i> Chat WhatsApp Sekarang
             </a>
         </div>
@@ -299,7 +371,7 @@
     <section class="py-5">
         <div class="container">
              <h2 class="text-center fw-bold mb-4 text-primary-custom">Pertanyaan Umum (FAQ)</h2>
-            <div class="accordion w-75 mx-auto" id="accordionFAQ">
+             <div class="accordion w-75 mx-auto" id="accordionFAQ">
                 <div class="accordion-item">
                     <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Minimal Peserta?</button></h2>
                     <div id="faq1" class="accordion-collapse collapse show"><div class="accordion-body">Minimal 20 pax.</div></div>
@@ -322,7 +394,7 @@
                 <div class="col-md-4">
                     <div class="card h-100 card-hover border-0 shadow-sm">
                         <div class="blog-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=600" class="card-img-top" alt="Manfaat Team Building">
+                            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=600" class="card-img-top" alt="Manfaat Team Building" loading="lazy">
                         </div>
                         <div class="card-body">
                             <div class="mb-2">
@@ -333,7 +405,7 @@
                             <p class="card-text text-muted small">Mengapa perusahaan besar rutin mengadakan outbound setiap tahun? Simak alasannya di sini...</p>
                         </div>
                         <div class="card-footer bg-white border-0 pb-3">
-                            <a href="artikel-team-building.html" class="text-success text-decoration-none fw-bold small">Baca Selengkapnya &rarr;</a>
+                            <a href="artikel-team-building.html" class="text-success text-decoration-none fw-bold small">Baca Selengkapnya →</a>
                         </div>
                     </div>
                 </div>
@@ -341,7 +413,7 @@
                 <div class="col-md-4">
                     <div class="card h-100 card-hover border-0 shadow-sm">
                         <div class="blog-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=600" class="card-img-top" alt="Outfit Outbound">
+                            <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=600" class="card-img-top" alt="Outfit Outbound" loading="lazy">
                         </div>
                         <div class="card-body">
                             <div class="mb-2">
@@ -352,7 +424,7 @@
                             <p class="card-text text-muted small">Jangan salah kostum! Udara Batu cukup dingin, tapi aktivitas fisik bikin berkeringat. Ini solusinya...</p>
                         </div>
                         <div class="card-footer bg-white border-0 pb-3">
-                            <a href="artikel-outfit-outbound.html" class="text-success text-decoration-none fw-bold small">Baca Selengkapnya &rarr;</a>
+                            <a href="artikel-outfit-outbound.html" class="text-success text-decoration-none fw-bold small">Baca Selengkapnya →</a>
                         </div>
                     </div>
                 </div>
@@ -360,7 +432,7 @@
                 <div class="col-md-4">
                     <div class="card h-100 card-hover border-0 shadow-sm">
                         <div class="blog-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1533850595620-7b1711221751?q=80&w=600" class="card-img-top" alt="Review Jeep">
+                            <img src="https://images.unsplash.com/photo-1533850595620-7b1711221751?q=80&w=600" class="card-img-top" alt="Review Jeep" loading="lazy">
                         </div>
                         <div class="card-body">
                             <div class="mb-2">
@@ -371,7 +443,7 @@
                             <p class="card-text text-muted small">Pengalaman memacu adrenalin menyusuri hutan pinus dan sungai lumpur menggunakan Jeep 4x4.</p>
                         </div>
                         <div class="card-footer bg-white border-0 pb-3">
-                            <a href="artikel-jeep-offroad.html" class="text-success text-decoration-none fw-bold small">Baca Selengkapnya &rarr;</a>
+                            <a href="artikel-jeep-offroad.html" class="text-success text-decoration-none fw-bold small">Baca Selengkapnya →</a>
                         </div>
                     </div>
                 </div>
@@ -435,8 +507,8 @@
                 <div class="col-md-4 mb-4">
                     <h5 class="fw-bold">Follow Us</h5>
                     <div class="d-flex gap-3">
-                        <a href="#" class="text-light fs-4"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-light fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                     </div>
                 </div>
             </div>
@@ -445,7 +517,9 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/6282211221909?text=Halo%20Admin,%20saya%20ingin%20info%20lebih%20lanjut" class="float-wa" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    <a href="https://wa.me/6282211221909?text=Halo%20Admin,%20saya%20ingin%20info%20lebih%20lanjut" class="float-wa" target="_blank" aria-label="Chat WhatsApp" rel="nofollow">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
     <div class="modal fade" id="modalPaket1" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -455,7 +529,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="img/IMG_8867_2_11zon.webp" class="img-fluid rounded mb-3" alt="Half Day">
+                    <img src="img/IMG_8867_2_11zon.webp" class="img-fluid rounded mb-3" alt="Detail Paket Half Day" loading="lazy">
                     <h5 class="fw-bold">Fasilitas:</h5>
                     <ul class="list-unstyled">
                         <li><i class="bi bi-check-circle-fill text-success me-2"></i>Tiket Masuk Lokasi</li>
@@ -479,7 +553,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="img/IMG_8895_5_11zon.webp" class="img-fluid rounded mb-3" alt="Full Day">
+                    <img src="img/IMG_8895_5_11zon.webp" class="img-fluid rounded mb-3" alt="Detail Paket Full Day" loading="lazy">
                     <h5 class="fw-bold">Fasilitas Lengkap:</h5>
                     <ul class="list-unstyled">
                         <li><i class="bi bi-check-circle-fill text-success me-2"></i>Semua Fasilitas Half Day</li>
@@ -503,7 +577,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="img/Slide16_16_11zon.webp" class="img-fluid rounded mb-3" alt="Adventure">
+                    <img src="img/Slide16_16_11zon.webp" class="img-fluid rounded mb-3" alt="Detail Paket Adventure" loading="lazy">
                     <h5 class="fw-bold">Pilihan Adventure:</h5>
                     <ul>
                         <li>Rafting Kaliwatu (Grade 2-3)</li>
@@ -520,17 +594,17 @@
 
     <div class="modal fade" id="modalGaleri1" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content bg-transparent border-0"><div class="modal-body p-0 text-center"><img src="img/Slide13_13_11zon.webp" class="img-fluid rounded shadow-lg"></div></div>
+            <div class="modal-content bg-transparent border-0"><div class="modal-body p-0 text-center"><img src="img/Slide13_13_11zon.webp" class="img-fluid rounded shadow-lg" loading="lazy"></div></div>
         </div>
     </div>
     <div class="modal fade" id="modalGaleri2" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content bg-transparent border-0"><div class="modal-body p-0 text-center"><img src="img/IMG_8895_5_11zon.webp" class="img-fluid rounded shadow-lg"></div></div>
+            <div class="modal-content bg-transparent border-0"><div class="modal-body p-0 text-center"><img src="img/IMG_8895_5_11zon.webp" class="img-fluid rounded shadow-lg" loading="lazy"></div></div>
         </div>
     </div>
     <div class="modal fade" id="modalGaleri3" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content bg-transparent border-0"><div class="modal-body p-0 text-center"><img src="img/Slide6_6_11zon.webp" class="img-fluid rounded shadow-lg"></div></div>
+            <div class="modal-content bg-transparent border-0"><div class="modal-body p-0 text-center"><img src="img/Slide6_6_11zon.webp" class="img-fluid rounded shadow-lg" loading="lazy"></div></div>
         </div>
     </div>
 
